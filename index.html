@@ -103,11 +103,7 @@ body {
 			Your browser does not support JavaScript.
 		</noscript>
 
-		<div id="status">
-			<img id="status-splash" class="show-image--false fullsize--false use-filter--false" src="index.png" alt="">
-			<progress id="status-progress"></progress>
-			<div id="status-notice"></div>
-		</div>
+		
 
 		<script src="index.js"></script>
 		<script>
@@ -305,35 +301,7 @@ const engine = new Engine(GODOT_CONFIG); window.godotEngine = engine;
   #smbRomMsg { position: absolute; top: 58px; right: 10px; max-width: 340px; padding: 10px 12px; border-radius: 10px; background: rgba(12,14,20,.94); border: 1px solid rgba(255,255,255,.18); color: #ffe9a3; font-size: 12.5px; display: none; }
 </style>
 
-<div id="smbUI">
-  <div id="smbTop">
-    <button id="smbRom" class="primary" title="Cargar tu ROM de SMB1 (.nes)">📁 ROM</button>
-    <button id="smbFull" title="Pantalla completa">⛶ Pantalla completa</button>
-    <button id="smbToggle" title="Mostrar/ocultar controles táctiles">🎮 Controles</button>
-    <div id="smbSizeWrap" title="Tamaño de los controles">
-      <input id="smbSizeRange" type="range" min="0.7" max="1.6" step="0.05" value="1">
-      <span id="smbSizeLabel">100%</span>
-    </div>
-  </div>
-  <div id="smbRomMsg"></div>
 
-  <div id="smbTouch">
-    <div id="smbDpad">
-      <div class="smbDir up"    data-k="up">▲</div>
-      <div class="smbDir left"  data-k="left">◀</div>
-      <div id="smbDpadCore"></div>
-      <div class="smbDir right" data-k="right">▶</div>
-      <div class="smbDir down"  data-k="down">▼</div>
-    </div>
-    <div id="smbButtons">
-      <div class="smbRound" id="smbA" data-k="a">A</div>
-      <div class="smbRound" id="smbB" data-k="b">B</div>
-      <div id="smbRun">RUN</div>
-      <div id="smbStart" data-k="start">START</div>
-    </div>
-    <div class="smbHint">D-pad para moverte · A = saltar · B = correr/fuego · RUN mantiene B</div>
-  </div>
-</div>
 
 <input type="file" id="smbRomFile" accept=".nes,.NES,.nez,.unf,.unif" style="display:none">
 
